@@ -1,0 +1,47 @@
+{
+    "leagure_name": {
+        "英超": "England_a",
+        "英冠": "England_b",
+        "意甲": "Italy_a",
+        "西甲": "Span_a",
+        "德甲": "Germany_a",
+        "德乙": "Germany_b",
+        "法甲": "France_a"
+    },
+    "url": "http://127.0.0.1:8000/predict",
+    "England_a": {
+        "name": "英超",
+        "url": "http://football-data.co.uk/mmz4281/1920/E0.csv",
+        "file": "data/E0_2019_2020.csv"
+    },
+    "England_b": {
+        "name": "英冠",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/E1.csv",
+        "file": "data/E1_2019_2020.csv"
+    },
+    "Italy_a": {
+        "name": "意甲",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/I1.csv",
+        "file": "data/I1_2019_2020.csv"
+    },
+    "Span_a": {
+        "name": "西甲",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/SP1.csv",
+        "file": "data/SP1_2019_2020.csv"
+    },
+    "Germany_a": {
+        "name": "德甲",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/D1.csv",
+        "file": "data/D1_2019_2020.csv"
+    },
+    "Germany_b": {
+        "name": "德乙",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/D2.csv",
+        "file": "data/D2_2019_2020.csv"
+    },
+    "France_a": {
+        "name": "法甲",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/F1.csv",
+        "file": "data/F1_2019_2020.csv"
+    }
+}

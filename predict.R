@@ -51,23 +51,10 @@ library("rjson")
 predict <- function(leagure, team_h, team_a) {
     # setwd("E:\\code\\R\\soccer_predict_r")
     
-    result <- fromJSON(file = "leagure.json")
-    filename <- result[[leagure]]
+    result <- fromJSON(file = "config.json")
+    filename <- result[[leagure]][['file']]
     soccer_record <- read.csv(filename)
-    # if(leagure == 'Italy_a'){
-    #     index <- 1
-    # }
-
-    # if(leagure == 'England_a'){
-    #     index <- 2
-    # }
     
-    # soccer_record <- switch(
-    #     index,
-    #     read.csv('I1_2019_2020.csv'),
-    #     read.csv('E0_2019_2020.csv')
-    # )
-
     goals1 <- soccer_record$FTHG
     goals2 <- soccer_record$FTAG
     team1 <- soccer_record$HomeTeam
