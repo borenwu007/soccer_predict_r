@@ -1,0 +1,10 @@
+client/.DS_Store
+client/dist/electron/*
+client/dist/web/*
+client/build/*
+!build/icons
+client/node_modules/
+client/npm-debug.log
+client/npm-debug.log.*
+client/thumbs.db
+!.gitkeep
