@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "bootstrap": "3.3.7",
+    "bootstrap": "3.4.1",
     "jquery": "^1.12.4",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
