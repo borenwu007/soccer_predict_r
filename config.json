@@ -43,5 +43,15 @@
         "name": "法甲",
         "url": "https://www.football-data.co.uk/mmz4281/1920/F1.csv",
         "file": "data/F1_2019_2020.csv"
+    },
+    "Nether_a":{
+        "name":"荷甲",
+        "url":"https://www.football-data.co.uk/mmz4281/1920/N1.csv",
+        "file":"data/N1_2019_2020.csv"
+    },
+    "Port_a":{
+        "name":"葡甲",
+        "url":"https://www.football-data.co.uk/mmz4281/1920/P1.csv",
+        "file":"data/P1_2019_2020.csv"
     }
 }

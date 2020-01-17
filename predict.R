@@ -10,7 +10,7 @@ library("rjson")
 #* @param team_a The away team
 #* @post /predict
 predict <- function(leagure, team_h, team_a) {
-    # setwd("E:\\code\\R\\soccer_predict_r")
+    # setwd("E:\\code\\R\\soccer_predict")
     
     result <- fromJSON(file = "config.json")
     filename <- result[[leagure]][['file']]
