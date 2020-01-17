@@ -51,9 +51,8 @@
     }
   },
   "dependencies": {
+    "ant-design-vue": "^1.4.10",
     "axios": "^0.18.0",
-    "bootstrap": "3.3.7",
-    "jquery": "^1.12.4",
     "vue": "^2.5.16",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1"

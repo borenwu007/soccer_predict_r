@@ -31,7 +31,8 @@ def update_file(leagure):
 
 
 if __name__ == "__main__":
-    # update_file('Italy_a')
-    # df = get_predict('Italy_a', 'Inter', 'Atalanta')
-    # print(df)
-    pass
+    update_file('Italy_a')
+    result = get_predict('Italy_a', 'Parma', 'Roma')
+    df = pd.DataFrame(result)
+    print(df)
+    
