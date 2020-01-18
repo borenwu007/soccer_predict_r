@@ -1,6 +1,7 @@
 library(goalmodel)
 library(dplyr) # Useful for data manipulation. 
 library("rjson")
+library(stringr)
 
 
 
@@ -10,7 +11,15 @@ library("rjson")
 #* @param team_a The away team
 #* @post /predict
 predict <- function(leagure, team_h, team_a) {
-    # setwd("E:\\code\\R\\soccer_predict")
+    setwd("E:\\code\\R\\soccer_predict")
+    
+    if(str_detect(team_h, "20%")) {
+        team_h <- str_replace(team_h,"20%"," ")
+    }
+    
+    if(str_detect(team_a, "20%")) {
+        team_a <- str_replace(team_a,"20%"," ")
+    }
     
     result <- fromJSON(file = "config.json")
     filename <- result[[leagure]][['file']]
@@ -24,8 +33,11 @@ predict <- function(leagure, team_h, team_a) {
     gm_res <- goalmodel(goals1 = goals1, goals2 = goals2,
                         team1 = team1, team2=team2,
                         dc=TRUE
-                     )
+                      )
     
+    
+    print(team_h)
+    print(team_a)
     to_predict1 <- c(team_h)
     to_predict2 <- c(team_a)
 

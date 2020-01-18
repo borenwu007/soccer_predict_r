@@ -20,8 +20,11 @@ def predict():
     team_h = request.json.get('team_h')
     team_a = request.json.get('team_a')
 
-    print(leagure)
-
+    if team_h.find(' ') >= 0:
+        team_h = team_h.replace(' ','20%')
+    if team_a.find(' ') >= 0:
+        team_a = team_a.replace(' ','20%')
+    
     result = get_predict(leagure, team_h, team_a)
     recognize_info = {'code': 200, 'result': result}
     return jsonify(recognize_info)

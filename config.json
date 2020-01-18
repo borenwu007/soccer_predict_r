@@ -26,7 +26,7 @@
     },
     "Span_a": {
         "name": "西甲",
-        "url": "https://www.football-data.co.uk/mmz4281/1920/SP1.csv",
+        "url": "https://www.football-data.co.uk/mmz4281/1920/SP1.csv",  
         "file": "data/SP1_2019_2020.csv"
     },
     "Germany_a": {
