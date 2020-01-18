@@ -36,8 +36,7 @@ predict <- function(leagure, team_h, team_a) {
                       )
     
     
-    print(team_h)
-    print(team_a)
+    
     to_predict1 <- c(team_h)
     to_predict2 <- c(team_a)
 
